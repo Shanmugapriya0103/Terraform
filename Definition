@@ -1,10 +1,10 @@
-##Terraform: 
-Its a open source tool for infrastructure provisioning & Deploying Application
+Terraform: 
+Its a open source tool for infrastructure provisioning & Deploying Application . Its written in a language called HASHEY CORP CONFIGURATION LANGUAGE.
 Working on the principle of IaC
 Automate and manage your infrastructure and services that run on the platform
 
-##Architecture:
-1. Provider : Allow us to communicate with specific set of APIs
+Architecture:
+1. Provider : Allow us to communicate with specific set of APIs ( AWS , AZURE , GCP )
 provider "aws" {
   region = " "
   access_key = " "
@@ -13,3 +13,21 @@ provider "aws" {
 2. Core
 Tf-Config - What needs to create and configure
 Tf-State - Up to date state of the current setup
+
+Stages :
+Terraform Init --> Tarraform plan --> Terraform apply ( Click " YES " )
+
+Basic Commands:
+1. Refresh  - Query the Infrastaructure provider to get Current state
+2. Plan - Create a Execution plan like PREVIEW
+3. Apply - Execute the Plan like to get a OUTPUT
+4. Destroy - Delete the Resource infrastructure
+5. State Lise - Listout all the resources 
+6. State show - Datail about the resources 
+
+Terraform Files:
+1. Provider Plugins File
+2. Terraform .tf state file 
+3. Terraform .tf state backup
+
+
