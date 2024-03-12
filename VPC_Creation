@@ -1,1 +1,21 @@
+# Selecting the Provider and access it 
+provider " aws " {
+  region = " "
+  access_key = " "
+  secret_key = " "
+}
 
+# VPC Creation
+resources "aws_vpc" "our custom vpc" {
+  cidr_block = 10.0.0.0/16
+  tags = {
+  Names = "PRODUCTION"
+  }
+}
+resources "aws_subnet" "subnet_1" {
+  vpc_id = aws_vpc.our custom vpc.id
+  cidr_block = 10.0.0.0/24
+  tags = {
+  Names = "PROD_SUBNET_1"
+  }
+}
