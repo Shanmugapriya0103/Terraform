@@ -1,0 +1,7 @@
+# Create a custom Virtual Private Cloud (VPC) with an EC2 instance operating within it, and set up a web server on this instance.
+# Selecting the Provider and access it 
+provider " aws " {
+  region = " "
+  access_key = " "
+  secret_key = " "
+}
