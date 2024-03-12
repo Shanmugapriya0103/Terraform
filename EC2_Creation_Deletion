@@ -1,0 +1,17 @@
+# Selecting the Provider and access it 
+provider " aws " {
+  region = " "
+  access_key = " "
+  secret_key = " "
+}
+
+# Creating EC2 Instance 
+resources "aws_instance" "Production" {
+  ami = " "
+  instance type = " "
+}
+
+# Deleting the EC2 Instance : 2 ways we can delete it . 
+1.Terraform  DESTROY
+2. Make as Terraform code as comment ( # ) and give apply 
+
